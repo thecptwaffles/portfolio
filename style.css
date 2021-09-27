@@ -1,0 +1,61 @@
+:root {
+    --prim-font: 'Montserrat', sans-serif;
+    --sec-font: 'Quicksand', sans-serif;
+    --prim-color: #d3d696;
+    --sec-color: #303600;
+    --accent-color: #007663;
+    --thrd-color: #f2fedc;
+
+}
+
+html {
+    background: var(--prim-color);
+}
+
+.sec1 {
+    background: var(--thrd-color);
+    border: 3px solid var(--accent-color);
+    font-family: var(--prim-font);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title {
+    transition: text 250ms ease-in-out;
+    color: var(--sec-color);
+}
+
+.title:hover {
+    text-decoration: underline var(--accent-color) 2px;
+}
+
+.sec2 {
+    background: var(--thrd-color);
+    border: 3px solid var(--accent-color);
+    margin-top: 1rem;
+    font-family: var(--sec-font);
+    text-align: center;
+}
+
+.fancy_link {
+    text-decoration: none;
+    color: var(--sec-color);
+    font-size: 1.56rem;
+    transform: text 250ms ease-in-out;
+    transform-origin: left;
+}
+
+.fancy_link:hover {
+    text-decoration: underline var(--accent-color);
+}
+
+.sec3 {
+    margin-top: 1rem;
+    font-family: var(--sec-font);
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-image: url(./content/waterfall.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
