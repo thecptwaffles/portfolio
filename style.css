@@ -41,21 +41,43 @@ html {
     text-decoration: none;
     color: var(--sec-color);
     font-size: 1.56rem;
-    transform: text 250ms ease-in-out;
-    transform-origin: left;
-}
-
-.fancy_link:hover {
-    text-decoration: underline var(--accent-color);
 }
 
 .sec3 {
     margin-top: 1rem;
     font-family: var(--sec-font);
     text-align: center;
-    width: 100%;
-    height: 400px;
+    aspect-ratio: 3648/2736;
     background-image: url(./content/waterfall.JPG);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing {
+    width: 22ch;
+    animation: typing 2s steps(22),
+        blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
