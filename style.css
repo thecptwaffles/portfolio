@@ -1,83 +1,28 @@
 :root {
     --prim-font: 'Montserrat', sans-serif;
     --sec-font: 'Quicksand', sans-serif;
-    --prim-color: #d3d696;
-    --sec-color: #303600;
-    --accent-color: #007663;
-    --thrd-color: #f2fedc;
-
+    --primary-color: #33485f;
+    --secondary-color: #69ebb8;
+    --accent-color: #007d51;
+    background: var(--primary-color);
+    word-spacing: 2.5rem;
 }
 
-html {
-    background: var(--prim-color);
-}
-
-.sec1 {
-    background: var(--thrd-color);
-    border: 3px solid var(--accent-color);
+.head {
+    color: var(--secondary-color);
     font-family: var(--prim-font);
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.5rem;
+    text-align: right;
 }
 
-.title {
-    transition: text 250ms ease-in-out;
-    color: var(--sec-color);
+.home:hover {
+    text-decoration: underline;
 }
 
-.title:hover {
-    text-decoration: underline var(--accent-color) 2px;
+.projects:hover {
+    text-decoration: underline;
 }
 
-.sec2 {
-    background: var(--thrd-color);
-    border: 3px solid var(--accent-color);
-    margin-top: 1rem;
-    font-family: var(--sec-font);
-    text-align: center;
-}
-
-.fancy_link {
-    text-decoration: none;
-    color: var(--sec-color);
-    font-size: 1.56rem;
-}
-
-.sec3 {
-    margin-top: 1rem;
-    font-family: var(--sec-font);
-    text-align: center;
-    aspect-ratio: 3648/2736;
-    background-image: url(./content/waterfall.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.wrapper {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.typing {
-    width: 22ch;
-    animation: typing 2s steps(22),
-        blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: monospace;
-    font-size: 2em;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+.contact:hover {
+    text-decoration: underline;
 }
