@@ -5,7 +5,7 @@
     --secondary-color: #69ebb8;
     --accent-color: #007d51;
     background: var(--primary-color);
-    word-spacing: 2.5rem;
+    word-spacing: 10px;
 }
 
 .head {
@@ -25,4 +25,17 @@
 
 .contact:hover {
     text-decoration: underline;
+}
+
+a {
+    color: var(--secondary-color);
+    font-family: var(--prim-font);
+    font-size: 3.125rem;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-family: var(--prim-font);
+    font-size: 2.5rem;
 }
