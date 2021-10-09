@@ -64,3 +64,13 @@ img {
 #home {
     border-bottom: solid var(--accent-color);
 }
+
+#contact {
+    text-align: center;
+    margin-top: 5rem;
+    border-bottom: solid var(--accent-color);
+}
+
+.email:hover {
+    text-decoration: underline 1px;
+}
