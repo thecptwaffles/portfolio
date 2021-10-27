@@ -4,7 +4,7 @@
     --primary-color: #33485f;
     --secondary-color: #69ebb8;
     --accent-color: #007d51;
-    background: var(--primary-color);
+    background-image: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     word-spacing: 10px;
     scroll-behavior: smooth;
 }
@@ -13,7 +13,7 @@
     color: var(--secondary-color);
     font-family: var(--prim-font);
     font-size: 2.5rem;
-    text-align: right;
+    text-align: center;
     border-bottom: solid var(--accent-color);
 }
 
@@ -29,7 +29,7 @@
     text-decoration: underline 2px;
 }
 
-a {
+header a {
     color: var(--secondary-color);
     font-family: var(--prim-font);
     font-size: 3.125rem;
@@ -52,6 +52,7 @@ p {
 }
 
 #projects {
+    border-bottom: solid var(--accent-color);
     border-bottom: solid var(--accent-color);
 }
 
@@ -80,6 +81,7 @@ p {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
+    margin-bottom: 3rem;
 }
 
 .column img {
