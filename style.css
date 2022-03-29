@@ -17,8 +17,6 @@ body {
   text-align: center;
   background: linear-gradient(90deg, var(--prim-clr) var(--gradient-percent), var(--sec-clr), var(--accent-clr) 100%);
   color: black;
-  margin: 0;
-  padding: 0;
 }
 
 
