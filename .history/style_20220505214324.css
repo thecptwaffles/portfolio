@@ -36,25 +36,63 @@ p {
 .nav-container {
     position: relative;
     text-align: center;
+    background: linear-gradient(90deg, var(--prim-clr), var(--sec-clr), var(--accent-clr));
+    color: black;
 }
 
 .nav-container a {
     font-family: var(--prim-font);
     text-align: center;
     padding: 0.25em 1em;
-    background: var(--accent-clr);
+    background: #f5f5f5;
     color: black;
-    font-weight: 800;
     text-decoration: none;
     border-radius: 0.25em;
     transition: all 0.25s ease-in-out;
     border: 1px solid transparent;
-    -webkit-border-radius: 0.25em;
-    -moz-border-radius: 0.25em;
-    -ms-border-radius: 0.25em;
-    -o-border-radius: 0.25em;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+}
+
+.nav-container a:hover {
+    background: #d5d5d5;
+    color: black;
+}
+
+.nav-container a.active {
+    background: #d5d5d5;
+    color: black;
+}
+
+.nav-container .dropdown {
+    position: absolute;
+    top: 2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: #f5f5f5;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.25em;
+    transition: all 0.25s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.nav-container .dropdown a {
+    font-family: var(--prim-font);
+    text-align: center;
+    padding: 0.25em 1em;
+    background: #f5f5f5;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.25em;
+    transition: all 0.25s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.nav-container .dropdown a:hover {
+    background: #d5d5d5;
+    color: black;
+}
+
+.nav-container .dropdown a.active {
+    background: #d5
 }
