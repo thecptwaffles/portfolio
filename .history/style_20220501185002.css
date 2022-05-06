@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
 
 :root {
-    --prim-clr: #845ec2;
-    --sec-clr: #ba3caf;
-    --accent-clr: #d73222;
+    --prim-clr: #00e6ff;
+    --sec-clr: #8ef8b6;
+    --accent-clr: #55bf81;
     --prim-font: 'Montserrat', sans-serif;
     --sec-font: 'Source Sans Pro', sans-serif;
     --gradient-percent: 0%;
@@ -15,7 +15,7 @@
 body {
     position: relative;
     text-align: center;
-    background: linear-gradient(90deg, var(--prim-clr), var(--sec-clr), var(--accent-clr));
+    background: linear-gradient(90deg, var(--prim-clr) var(--gradient-percent), var(--sec-clr), var(--accent-clr) 100%);
     color: black;
 }
 
